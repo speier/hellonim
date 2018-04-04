@@ -1,9 +1,15 @@
-[Package]
-name          = "hellonim"
+# Package
+
 version       = "0.1.0"
 author        = "Kalman Speier"
 description   = "Example project for learning Nim"
 license       = "MIT"
+srcDir        = "src"
+bin           = @["hello"]
+backend       = "js"
 
-[Deps]
-Requires: "nim >= 0.11.2"
+skipExt = @["nim"]
+
+# Dependencies
+
+requires "nim >= 0.18.0"
